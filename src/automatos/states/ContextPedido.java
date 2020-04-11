@@ -10,8 +10,7 @@ public class ContextPedido {
 	public int qtd;
 	public String Cliente;
 	
-	
-	
+		
 	public ContextPedido(){
 		state = null;
 	}
