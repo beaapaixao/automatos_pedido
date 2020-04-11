@@ -21,9 +21,9 @@ public class ConcreteStateA_Novo implements State_Pedido {
 	}
 	
 	@Override
-	public String cancelarPedido(ContextPedido pedido) {
+	public void cancelarPedido(ContextPedido pedido) {
 		pedido.setState(new ConcreteStateE_Cancelado(pedido));
-		return "Pedido cancelado";
+		System.out.println("Pedido cancelado");
 	}
 	
 	/* -------------------TRANSIÇÕES IMPOSSÍVEIS-----------------------------*/

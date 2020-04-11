@@ -36,8 +36,8 @@ public class ConcreteStateF_Finalizado implements State_Pedido{
 	}
 	
 	@Override
-	public String cancelarPedido(ContextPedido pedido) {
-		return "O pedido só pode ser finalizado";
+	public void cancelarPedido(ContextPedido pedido) {
+		System.out.println("O pedido só pode ser finalizado");
 	}
 	
 	/* -------------------MÉTODOS DA CLASSE----------------------------------*/

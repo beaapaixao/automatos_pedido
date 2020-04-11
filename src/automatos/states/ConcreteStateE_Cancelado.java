@@ -9,9 +9,9 @@ public class ConcreteStateE_Cancelado implements State_Pedido{
 	/* -------------------TRANSIÇÕES POSSÍVEIS-------------------------------*/
 	
 	@Override
-	public String cancelarPedido(ContextPedido pedido) {
+	public void cancelarPedido(ContextPedido pedido) {
 		pedido.setState(this);
-		return "Pedido cancelado";
+		System.out.println("Pedido cancelado");
 	}
 	
 	@Override

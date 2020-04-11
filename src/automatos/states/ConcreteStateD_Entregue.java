@@ -37,8 +37,8 @@ public class ConcreteStateD_Entregue implements State_Pedido{
 	
 	
 	@Override
-	public String cancelarPedido(ContextPedido pedido) {
-		return "O pedido deve ser entregue ou finalizado";
+	public void cancelarPedido(ContextPedido pedido) {
+		System.out.println("O pedido deve ser entregue ou finalizado");
 	}
 	
 	/* -------------------MÉTODOS DA CLASSE----------------------------------*/

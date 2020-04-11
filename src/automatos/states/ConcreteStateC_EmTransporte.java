@@ -32,8 +32,9 @@ public class ConcreteStateC_EmTransporte implements State_Pedido {
 	}
 	
 	@Override
-	public String cancelarPedido(ContextPedido pedido) {
-		return "Sinto muito, não será possível cancelar, pois o seu pedido já saiu para entrega";
+	public void cancelarPedido(ContextPedido pedido) {
+		System.out.println("Sinto muito, não será possível cancelar,"
+				+ " pois o seu pedido já saiu para entrega");
 	}
 	
 	@Override
