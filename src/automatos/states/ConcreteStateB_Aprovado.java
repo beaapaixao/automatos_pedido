@@ -29,12 +29,12 @@ public class ConcreteStateB_Aprovado implements State_Pedido {
 	/* -------------------TRANSIÇÕES IMPOSSÍVEIS-----------------------------*/
 	@Override
 	public void entregarPedido(ContextPedido pedido) {
-		System.out.println("O pedido ainda não está em transporte");
+		System.out.println("Erro - O pedido ainda não está em transporte");
 	}
 	
 	@Override
 	public void criarPedido(ContextPedido pedido) {
-		System.out.println("O pedido já foi criado");
+		System.out.println("Erro - O pedido já foi criado");
 	}
 	
 	@Override

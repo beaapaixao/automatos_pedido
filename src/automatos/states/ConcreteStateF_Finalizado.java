@@ -17,33 +17,33 @@ public class ConcreteStateF_Finalizado implements State_Pedido{
 	/* -------------------TRANSIÇÕES IMPOSSÍVEIS-----------------------------*/
 	@Override
 	public void criarPedido(ContextPedido pedido) {
-		System.out.println("O pedido só pode ser finalizado");
+		System.out.println("Erro - O pedido só pode ser finalizado");
 	}
 	
 	@Override
 	public void aprovarPedido(ContextPedido pedido) {
-		System.out.println("O pedido só pode ser finalizado");
+		System.out.println("Erro - O pedido só pode ser finalizado");
 	}
 	
 	@Override
 	public void transportarPedido(ContextPedido pedido) {
-		System.out.println("O pedido só pode ser finalizado");
+		System.out.println("Erro - O pedido só pode ser finalizado");
 	}
 	
 	@Override
 	public void entregarPedido(ContextPedido pedido) {
-		System.out.println("O pedido só pode ser finalizado");
+		System.out.println("Erro - O pedido só pode ser finalizado");
 	}
 	
 	@Override
 	public void cancelarPedido(ContextPedido pedido) {
-		System.out.println("O pedido só pode ser finalizado");
+		System.out.println("Erro - O pedido só pode ser finalizado");
 	}
 	
 	/* -------------------MÉTODOS DA CLASSE----------------------------------*/
 	@Override
 	public String print_state() {
-		return this.getClass().getSimpleName();
+		return "Finalizado";
 	}
 	
 }

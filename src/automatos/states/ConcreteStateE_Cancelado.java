@@ -24,28 +24,28 @@ public class ConcreteStateE_Cancelado implements State_Pedido{
 	
 	@Override
 	public void criarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser Cancelado");
+		System.out.println("Erro - O pedido deve ser Cancelado");
 	}
 	
 	@Override
 	public void aprovarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser Cancelado");
+		System.out.println("Erro - O pedido deve ser Cancelado");
 	}
 	
 	@Override
 	public void transportarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser Cancelado");
+		System.out.println("Erro - O pedido deve ser Cancelado");
 	}
 	
 	@Override
 	public void entregarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser Cancelado");
+		System.out.println("Erro - O pedido deve ser Cancelado");
 	}
 	
 	/* -------------------MÉTODOS DA CLASSE----------------------------------*/
 	
 	@Override
 	public String print_state() {
-		return this.getClass().getSimpleName();
+		return "Cancelado";
 	}
 }

@@ -28,12 +28,12 @@ public class ConcreteStateC_EmTransporte implements State_Pedido {
 	
 	@Override
 	public void aprovarPedido(ContextPedido pedido) {
-		System.out.println("Seu pedido já foi aprovado anteriormente e já saiu para entrega");
+		System.out.println("Erro - Seu pedido já foi aprovado anteriormente e já saiu para entrega");
 	}
 	
 	@Override
 	public void cancelarPedido(ContextPedido pedido) {
-		System.out.println("Sinto muito, não será possível cancelar,"
+		System.out.println("Erro - Sinto muito, não será possível cancelar,"
 				+ " pois o seu pedido já saiu para entrega");
 	}
 	
@@ -46,6 +46,6 @@ public class ConcreteStateC_EmTransporte implements State_Pedido {
 	
 	@Override
 	public String print_state() {
-		return this.getClass().getSimpleName();
+		return "Em transporte";
 	}
 }

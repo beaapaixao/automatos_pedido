@@ -22,30 +22,30 @@ public class ConcreteStateD_Entregue implements State_Pedido{
 	
 	@Override
 	public void criarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser entregue ou finalizado");
+		System.out.println("Erro - O pedido deve ser entregue ou finalizado");
 	}
 	
 	@Override
 	public void aprovarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser entregue ou finalizado");
+		System.out.println("Erro - O pedido deve ser entregue ou finalizado");
 	}
 	
 	@Override
 	public void transportarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser entregue ou finalizado");
+		System.out.println("Erro - O pedido deve ser entregue ou finalizado");
 	}
 	
 	
 	@Override
 	public void cancelarPedido(ContextPedido pedido) {
-		System.out.println("O pedido deve ser entregue ou finalizado");
+		System.out.println("Erro - O pedido deve ser entregue ou finalizado");
 	}
 	
 	/* -------------------MÉTODOS DA CLASSE----------------------------------*/
 	
 	@Override
 	public String print_state() {
-		return this.getClass().getSimpleName();
+		return "Entregue";
 	}
 	
 }
