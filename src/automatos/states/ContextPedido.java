@@ -8,7 +8,7 @@ public class ContextPedido {
 	public int id;
 	public String nome;
 	public int qtd;
-	public String Cliente;
+	public String cliente;
 	
 		
 	public ContextPedido(){
