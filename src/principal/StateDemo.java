@@ -57,6 +57,7 @@ public class StateDemo {
 		  
 		  cancelar.entregarPedido(pedido);
 		  cancelar.aprovarPedido(pedido);
+		  
 	}
 
 }

@@ -39,6 +39,7 @@ public class ContextPedido {
 	public void finalizarPedido(ContextPedido pedido) {
 		state.finalizarPedido(this);
 	}
+	
 	/*-------------------------GETS E SETS----------------------------------*/
 
 	public void setState(State_Pedido state){
@@ -53,10 +54,6 @@ public class ContextPedido {
 	
 	public int getId() {
 			return id;
-	}
-	
-	public void setId(){
-		//Criar um Arraylist de pedidos 
 	}
 	
 }
